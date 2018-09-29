@@ -23,14 +23,14 @@
 	        	<div class="logo">
 		            <img src="../../../static/img/b_logo.png" alt="" style="width:180px;height:48px">
 		            <ul class="fr clearfix">
-		                <li :class="{fw6:index == 1}"><router-link :to="{ path : '/home' }">首页</router-link></li>
-		                <li :class="{fw6:index == 2}"><router-link :to="{ path : '/news' }">特区新闻</router-link></li>
-		                <li :class="{fw6:index == 3}"><router-link :to="{ path : '/enterPark' }">产业服务</router-link></li>
-		                <li :class="{fw6:index == 4}"><router-link :to="{ path : '/siteReservation' }">学习服务</router-link></li>
-		                <li :class="{fw6:index == 5}"><router-link :to="{ path : '/cooperationAgency' }">研究服务</router-link></li>
-		                <li :class="{fw6:index == 6}"><router-link :to="{ path : '/townLodging' }">园区到访</router-link></li>
-		                <li :class="{fw6:index == 7}"><a href="http://www.msr-info.com/" target="_blank">海丝投</a></li>
-		                <li :class="{fw6:index == 8}"><router-link :to="{ path : '/contactUs' }">联系我们</router-link></li>
+		                <li :class="{fw6:index == 1}"><a href="/home">首页</a></li>
+		                <li :class="{fw6:index == 2}"><a href="/news">特区新闻</a></li>
+		                <li :class="{fw6:index == 3}"><a href="/enterPark">产业服务</a></li>
+		                <li :class="{fw6:index == 4}"><a href="/siteReservation">学习服务</a></li>
+		                <li :class="{fw6:index == 5}"><a href="/cooperationAgency">研究服务</a></li>
+		                <li :class="{fw6:index == 6}"><a href="/townLodging">园区到访</a></li>
+		                <li :class="{fw6:index == 7}"><a href="/hayCast">海丝投</a></li>
+		                <li :class="{fw6:index == 8}"><a href="/contactUs">联系我们</a></li>
 		            </ul>
 		        </div>
 		    </div>

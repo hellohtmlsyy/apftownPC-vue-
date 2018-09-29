@@ -22,9 +22,9 @@
 							<div class="news_conR div cp" @click="goNewsDetail(item.id)">
 								<a href="javascript:;">
 									<div class="dataBox">
-										<span class="fs-24 fw-6" :class="news_color == 2? 'news_color2': ( news_color == 3? 'news_color3' : 'news_color5' )">{{year}}</span>
-										<span class="fs-18" :class="news_color == 2? 'news_color2': ( news_color == 3? 'news_color3' : 'news_color5' )">/{{month}}</span>
-										<span class="news_color4 fs-14">/{{day}}</span>		
+										<span class="fs-24 fw-6" :class="news_color == 2? 'news_color2': ( news_color == 3? 'news_color3' : 'news_color5' )">{{item.createdTime[0]}}</span>
+										<span class="fs-18" :class="news_color == 2? 'news_color2': ( news_color == 3? 'news_color3' : 'news_color5' )">/{{item.createdTime[1]}}</span>
+										<span class="news_color4 fs-14">/{{item.createdTime[2]}}</span>		
 									</div>
 									<h3 class="col-33 fs-18 mb-8 fw-6 text-line-2 break">{{item.title}}</h3>
 									<span class="col-62 new_text text-line-3 break span">{{item.subTitle}}</span>
@@ -63,9 +63,6 @@
 				town_link: 1,
 				news_color: 2,
 				newsList: [],
-				year: 0,
-				month: 0,
-				day: 0,
 				pageNum: 1,
 				numPerPage: 20,
 				category: 10,
@@ -110,10 +107,7 @@
 					this.newsList = data;
 					for(var i in this.newsList) {
 						this.newsList[i].createdTime = getTime1( this.newsList[i].createdTime );
-						var dates = this.newsList[i].createdTime.split('-')
-						this.year = dates[0];
-						this.month = dates[1];
-						this.day = dates[2];
+						this.newsList[i].createdTime = this.newsList[i].createdTime.split('-')
 					}
 					if(res.data.data == '暂无数据'){
 						this.$layer.msg('暂无数据');

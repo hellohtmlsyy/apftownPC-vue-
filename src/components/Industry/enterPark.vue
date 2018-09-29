@@ -21,7 +21,7 @@
 		    				<img src="../../../static/img/Industry/adv.jpg"/>
 		    			</div>
 		    			<div class="advBoxr fl">
-		    				<div class="adv fs-36 fw-6">优势</div>
+		    				<div class="adv fs-36 fw-6">优势<span class="fs-18 regCompany" @click="regCompanyProcess">点击了解注册公司流程与条件</span></div>
 		    				<span class="fs-16 mb-6">海南的第一个金融小镇，享受三亚优惠税收政策</span><br />
 							<span class="fs-16 mb-6">地处海棠湾卓越自然环境</span><br />
 							<span class="fs-16">拥有<span class="fw-6">天时、地利、人和</span>三大优势</span>
@@ -92,6 +92,11 @@
 				index:3,
 			}
 		},
+		methods: {
+			regCompanyProcess(){
+				window.location.href = this.$root.urlPath.APF + '/regCompanyProcess';
+			},
+		},
 	}
 </script>
 
@@ -134,6 +139,18 @@
 		margin-bottom:18px;
 		margin-top: -10px;
 	}
+	.advBox .advBoxr .adv .regCompany{
+		font-weight: normal;
+		color: #eb6100;
+		border-radius: 5px;
+	    padding: 4.5px 12px;
+		border: 1px solid #eb6100;
+		cursor: pointer;
+		margin-left: 20px;
+	    vertical-align: top;
+	    margin-top: 10px;
+	}
+	
 	/*优惠政策*/
 	.enter_parkCon .favBox{
 		margin-top: 73px;

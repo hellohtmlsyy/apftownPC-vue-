@@ -28,7 +28,7 @@
 							<p>地址：海南省三亚市海棠区亚太金融小镇</p>
 						</li>
 					</ul>
-					<div class="link">
+					<!--<div class="link">
 						<h5 class="dib">友情链接</h5>
 						<ul class="foot_link">
 							<li><a href="http://www.eeg-bg.com/">武汉无抵押贷款</a></li>
@@ -40,7 +40,7 @@
 							<li><a href="http://www.z6666.com.cn/">中金国际</a></li>
 							<li><a href="http://www.hdxjkl.cn/">农村拆迁律师网</a></li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<div class="foot_b">

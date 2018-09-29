@@ -223,7 +223,7 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	img[src=""] {
 	    opacity: 0;
 	}

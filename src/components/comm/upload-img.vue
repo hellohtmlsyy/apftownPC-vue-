@@ -51,7 +51,7 @@
 				cropper: false,
 				extraData: {
 					0: '', //表示uid
-					1: 'xxs,xs,s,m,l,xl,xxl', //表示压缩格式,nocompress表示不压缩
+					1: '90:160,xxs,xs,s,m,l,xl,xxl', //表示压缩格式,nocompress表示不压缩
 					2: '' //表示名字
 				},
 				uploadUrl: this.$root.urlPath.UPLOAD + '/upload/c',

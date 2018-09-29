@@ -20,6 +20,7 @@ import bannerDet3 from '@/components/bannerDet/bannerDet3';
 import enterPark from '@/components/Industry/enterPark';
 import financialSupport from '@/components/Industry/financialSupport';
 import hayCast from '@/components/Industry/hayCast';
+import regCompanyProcess from '@/components/Industry/regCompanyProcess';
 
 //培训
 import financialConference from '@/components/train/financialConference';
@@ -57,13 +58,15 @@ export default new Router({
             component: Home,
             meta: {
 		    	title: '亚太金融(基金)小镇_基金注册_注册基金_基金小镇_金融小镇',
-		    	content: '首页',
 		    }
         },
         {
             path: '/news',
             name: 'news',
             component: News,
+            meta: {
+//		    	title: '新闻',
+		    }
         },
         {
             path: '/releaseNews',
@@ -124,6 +127,11 @@ export default new Router({
             path: '/hayCast',
             name: 'haycast',
             component: hayCast
+        },
+        {
+        	path: '/regCompanyProcess',
+        	name: 'regcompanyprocess',
+        	component: regCompanyProcess
         },
         {
             path: '/siteReservation',

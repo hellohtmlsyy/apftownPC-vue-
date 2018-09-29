@@ -39,7 +39,7 @@
 		                <li><a href="#">金融</a></li>
 		                <li><a href="#">培训</a></li>
 		                <li><a href="#">研究</a></li>
-		                <li><a href="http://www.msr-info.com/" target="_blank">海丝投</a></li>
+		                <li><a href="#">海丝投</a></li>
 		            </ul>
 				</div>
 			</div>

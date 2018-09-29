@@ -80,14 +80,13 @@
 									<span class="fs-16 col-70">工商注册、银行开户、税务登记系列服务</span>
 								</div>
 								<div class="text por">
-									<span class="fs-18 col-33 fw-6 mb-8">助力基金投融资 </span><br />
-									<span class="fs-16 col-70 mb-5">小镇互联网平台促进入驻企业</span><br />
-									<span class="fs-16 col-70">基金开展投融资活动</span>
+									<span class="fs-18 fw-6 mb-8 regCompany" @click="regCompanyProcess()">注册公司详解 </span><br />
+									<span class="fs-16 col-70">注册公司流程与费用介绍，注册条件说明</span>
 								</div>
 							</div>
 						</div>
 						<div class="indr cp">
-							<a href="/enterPark" class="indrBtn col-70 fs-20 mb-40">入驻园区</a>
+							<a href="/enterPark" class="indrBtn col-70 fs-20 mb-40">优势和优惠政策</a>
 							<a href="/financialSupport" class="indrBtn col-70 fs-20 mb-40">金融支持</a>
 							<a href="/hayCast" class="indrBtn col-70 fs-20">海丝投</a>
 						</div>
@@ -209,20 +208,40 @@
 			</div>
 		</div>
 		<m-footer></m-footer>
+		<div id="test3" v-show="layImg">
+            <div class="lay_con col-33" style="width: 1234px;">
+				<img src="../../static/img/home/hLayer.png" alt="" style="width:100%"/>    
+				<div class="cloBtn" @click="close()">×</div>
+            </div>
+        </div>
 	</div>
 </template>
 
 <script>
 	import Swiper1 from '../../static/js/swiper.min.js';
 	import { getTime1 } from '@/assets/commonjs/util.js';
+	import book3 from '@/components/comm/homeLayer';
 	export default {
+		components: {
+			book3
+		},
 		data() {
 			return {
 				index: 1,
 				newsList: [],
+				imgUrl: this.$root.urlPath.APF + '/static/img/home/hLayer.png',
+				layImg: false,
 			}
 		},
 		mounted(){
+			var self = this;
+			setTimeout(function(){
+				self.layImg = true;
+			},2000)
+			setTimeout(function(){
+				self.layImg = false;
+			},12000)
+			
 			var mySwiper = new Swiper1('.swiper-container', {
 				autoplay: 5000,
 				loop: true,
@@ -260,13 +279,39 @@
 			},
 			goMore(path){
 				location.href = this.$root.urlPath.APF + path;
-			}
+			},
+			regCompanyProcess(){
+				window.location.href = this.$root.urlPath.APF + '/regCompanyProcess';
+			},
+			close(){
+				this.layImg = false;
+			},
 		}
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	@import url("../../static/css/swiper.min.css");
+	#test3 {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -354px;
+		margin-left: -617px;
+		z-index: 100;
+	}
+	#test3 .lay_con{
+		position: relative;
+	}
+	#test3 .cloBtn{
+		position: absolute;
+		top: 38px;
+		right: 61px;
+		font-size: 45px;
+		color: #eb6303;
+		cursor: pointer;
+		opacity: 0;
+	}
 	/*-----Swiper-------*/
 	.home .swiper-pagination-bullet-active {
 		background: #FF0000 !important;
@@ -463,6 +508,13 @@
 	.home .industry .con .indr .indrBtn:hover {
 		color: #eb6100;
 		box-shadow: 3px 3px 27px 0px rgba(154, 65, 16, 0.5);
+	}
+	.home .industry .indl .text .regCompany {
+		border: 2px solid #f29700;
+		border-radius: 15px;
+		padding: 1px 10px;
+		color: #eb6100;
+		cursor: pointer;
 	}
 	
 	/*培训*/

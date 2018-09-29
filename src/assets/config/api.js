@@ -20,7 +20,7 @@ export default {
 		        UPLOAD: '/upload',//测试图片上传地址
 		        MC:'/mc1',//测试1.0地址
 		        WEB_URL: {
-		          WEB_MIAO: 'http://shw.miningcircle.com'
+		          	WEB_MIAO: 'http://shw.miningcircle.com'
 		        }
 	      	},
 	      	prod: {
@@ -28,13 +28,14 @@ export default {
 		        MC: 'http://www.miningcircle.com',//1.0地址
 		        APF: 'http://www.apftown.com',//小镇地址
 		        NEW: 'http://memberapi.apftown.com:8070',
+		        UPLOAD: 'http://www.miningcircle.com',//本地上传
 		    },
 	      	test: {
 	      		MC: 'http://www.miningcircle.com',//1.0地址
 		        APF:  'http://szj.apftown.com:8888',//小镇地址
 		        NEW: 'http://memberapi.apftown.com:8088',
 		        MJK: 'http://memberapi.miningcircle.com',//2.0地址
-		        UPLOAD: 'http://192.168.1.247',//本地上传
+		        UPLOAD: 'http://www.miningcircle.com',//本地上传
 	      	}		    
 	    }
 	    return URLS[ENV];
