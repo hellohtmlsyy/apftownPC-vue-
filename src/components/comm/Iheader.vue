@@ -14,14 +14,16 @@
 		            <li v-show="regToggle"><router-link :to="{ path: '/reg' }" class="active2">注册</router-link></li>
 		            <li v-show="!regToggle" @click="signOut()"><a href="javascript:;" class="active2">退出</a></li>
 		            <li class="top_line"></li>
-		            <li><router-link :to="{ path: '/aboutus' }">关于我们</router-link></li>
+		            <li><a href="http://www.apftown.com/aboutus" target="_blank">关于我们</a></li>
 		        </ul>
 			</div>
 		</div>
 		<div class="top_nav">
 		    <div class="w">
 	        	<div class="logo">
-		            <img src="../../../static/img/b_logo.png" alt="" style="width:180px;height:48px">
+								<a href="http://www.apftown.com/home">
+									<img src="../../../static/img/b_logo.png" alt="" class="cp" style="width:180px;height:48px;">
+								</a>
 		            <ul class="fr clearfix">
 		                <li :class="{fw6:index == 1}"><a href="/home">首页</a></li>
 		                <li :class="{fw6:index == 2}"><a href="/news">特区新闻</a></li>

@@ -4,13 +4,13 @@
 		<div class="top_banner">
 	        <img src="../../../static/img/Industry/industry_banner1.jpg">
 	    </div>
-	    <div class="train_tit">    	
+	    <div class="train_tit">
 	        <div class="w">
 	        	<div class="train_tab">
-        			<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/enterPark'}">入驻园区</router-link></div>	        			
+        			<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/enterPark'}">入驻园区</router-link></div>
 	        		<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/financialSupport'}">金融支持</router-link></div>
 	        		<div class="tabBox dib"><router-link :to="{ path : '/hayCast'}">海丝投</router-link></div>
-	        	</div>        	
+	        	</div>
 	        </div>
 	    </div>
 	    <div class="enter_parkCon">
@@ -27,7 +27,7 @@
 							<span class="fs-16">拥有<span class="fw-6">天时、地利、人和</span>三大优势</span>
 		    			</div>
 		    		</div>
-		    		
+
 		    		<div class="advInfo clearfix">
 		    			<div class="inf weather mr-35">
 		    				<div class="title fs-16 col-ff">天时 - 绿色通道</div>
@@ -39,10 +39,10 @@
 		    			</div>
 		    			<div class="inf people_and">
 		    				<div class="title fs-16 col-ff">人和 - 优惠政策</div>
-		    				<div class="text fs-14 lh-24">为入驻企业提供税收优惠及办公免租<br />税收优惠：2017年1月12日，三亚市政府出台文件，对企业部分的增值税及所得税属三亚市地方按前三年100%后七年70%给予奖励，对个人部分的所得税属三亚市地方按十年70%给予奖励<br />办公免租：对入驻客户提供5年办公室免租优惠，同时企业也可以选择异地办公。</div>
+		    				<div class="text fs-14 lh-24">为入驻企业提供税收优惠及办公免租<br />税收优惠：2017年1月12日，三亚市政府出台文件，对企业部分的增值税及所得税属三亚市地方按前三年100%后七年60%给予奖励，对个人部分的所得税属三亚市地方按十年70%给予奖励<br />办公免租：对入驻客户提供5年办公室免租优惠，同时企业也可以选择异地办公。</div>
 		    			</div>
-		    		</div>	
-		    		
+		    		</div>
+
 		    		<div class="favBox clearfix">
 		    			<div class="favBoxl fl">
 		    				<img src="../../../static/img/Industry/policy.jpg"/>
@@ -54,7 +54,7 @@
 							<span class="fs-16">为入驻小镇投资及基金公司提供如下优惠政策</span>
 		    			</div>
 		    		</div>
-		    		
+
 		    		<div class="favInfo clearfix">
 		    			<div class="inf weather mr-35">
 		    				<div class="title fs-16 col-ff">公司税收</div>
@@ -68,9 +68,9 @@
 		    				<div class="title fs-16 col-ff">人才服务</div>
 		    				<div class="text fs-14 lh-24 ls-1-">各类投资基金及管理企业享受三亚市相关人才服务政策包括高端人才落户、医疗、子女教育、人事档案管理、职称评定、社会保障等，市政务中心及各办事大厅实行“一站式”服务。</div>
 		    			</div>
-		    		</div>	
+		    		</div>
 	    		</div>
-	    		
+
 	    		<div class="company">
 	    			<div class="companyTit tac">
 	    				<img src="../../../static/img/Industry/admTit.png"/>
@@ -123,7 +123,7 @@
 		margin: 0 50%;
 		transform: translateX(-50%);
 	}
-	
+
 	.enter_parkCon{
 		margin:0 12.7%;
 		width:74.6%;
@@ -150,7 +150,7 @@
 	    vertical-align: top;
 	    margin-top: 10px;
 	}
-	
+
 	/*优惠政策*/
 	.enter_parkCon .favBox{
 		margin-top: 73px;

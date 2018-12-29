@@ -205,7 +205,7 @@
 　　			this.editor.destroy();
   　　 		},
   		created(){
-  			this.$axios.get( this.$root.urlPath.NEW + '/user/getUserInfo' )
+			this.$axios.get( this.$root.urlPath.NEW + '/user/getUserInfo' )
 			.then(res=>{
 				if(res.data.success){
 					var userId = res.data.data.userId;

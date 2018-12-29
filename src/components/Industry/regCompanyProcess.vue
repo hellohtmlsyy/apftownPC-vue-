@@ -7,63 +7,67 @@
 	    <div class="regCom_Process">
 	    	<div class="w">
 	    		<div class="regCom_ProcessCon">
-	    			<div class="process">
-	    				<div class="tac fs-36 fw-6 col-33">注册公司流程</div>
-	    				<div class="tac processCon">
-	    					<img src="../../../static/img/Industry/process.png"/>
+	    			<div class="com_type">
+	    				<div class="tac fs-30 fw-6 col-33 mt-32">公司类型</div>
+	    				<div class="tac mt-35">
+	    					<img src="../../../static/img/Industry/com_type1.png" alt="" style="margin-right: 64px;"/>
+	    					<img src="../../../static/img/Industry/com_type2.png" alt="" />
 	    				</div>
 	    			</div>
 	    			
+	    			<div class="reg_condition">
+	    				<div class="tac fs-30 fw-6 col-33 mt-40">注册条件</div>
+	    				<div class="mt-17 fs-20 col-33 lh-34">
+    						按照基金业协会基本要求相关高管人员具备<span class="fw-6 col-eb6100">金融从业经验，基金从业资格</span>高管人员须提供<span style="color: #0068b7;" class="fw-6">学历证书、征信报告、从业经历</span>等资料
+	    				</div>
+	    				<div class="mt-24">
+	    					<img src="../../../static/img/Industry/reg_condition.png" alt="" />
+	    				</div>
+	    			</div>
+	    			
+	    			<div class="reg_require tac">
+	    				<div class="fs-30 fw-6 col-33 mt-40">注册要求</div>
+	    				<div class="reg_requireCon mt-26">
+	    					<p class="fs-20 col-33 mb-10">参考《海南省工商行政管理局关于投资基金企业注册登记指导意见》</p>
+	    					<div class="fs-16 col-70 lh-28">本文档需向小镇工作人员索要<br />可点击在线咨询或拨打联系电话 400-670-2139</div>
+	    				</div>
+	    			</div>
+
 	    			<div class="condition">
-	    				<div class="tac fs-36 fw-6 col-33">注册公司条件</div>
-	    				<div class="col-requirement fs-24 fw-6 mt-58">股权投资基金企业和股权投资基金管理企业注册条件</div>
-	    				<div class="fs-16 fw-6 col-666 mt-12 lh-30">亚太金融小镇严格按照《海南省工商行政管理局关于股权投资基金企业和股权投资基金管理企业注册登记的指导意见》，对入驻小镇的股权投资基金企业和股权投资基金管理企业注册要求如下：</div>
-	    				<div class="conditionInfo">
-	    					<div class="fs-16 col-666 lh-34 mb-14 clearfix">
+	    				<div class="tac fs-30 fw-6 col-33">注册说明</div>
+	    				<div class="conditionInfo mt-24">
+	    					<div class="fs-18 col-333 lh-36 clearfix">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">股权投资基金企业和股权投资基金管理企业的组织形式为有限公司制或者有限合伙制。</div>
+    							<div class="conditionInfoR">股权投资基金公司可设有限公司和有限合伙。</div>
     						</div>
-    						<div class="fs-16 col-666 lh-34 mb-14 clearfix">
+    						<div class="fs-18 col-333 lh-36 clearfix">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">股权投资基金企业和股权投资基金管理企业，以有限公司形式设立的，股东人数建议不得超过50人；以有限合伙企业形式设立的，合伙人人数应当有2人以上50人以下。</div>
+    							<div class="conditionInfoR">无须金融办前置审批，小镇风控审核，注册成功后由小镇向金融办报备备案。</div>
     						</div>
-    						<div class="fs-16 col-666 lh-34 mb-14 clearfix">
+    						<div class="fs-18 col-333 lh-36 clearfix">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">有限公司制股权投资基金企业名称核准为：<br />行政区划+字号+股权投资基金+有限公司;有限合伙制股权投资基金企业名称核定为：行政区划+字号+股权投资基金+合伙企业+（有限合伙）。有限公司制股权投资基金管理企业名称核准为：行政区划+字号+股权投资基金管理+有限公司；有限合伙制股权投资基金管理企业名称核定为：行政区划+字号+股权投资基金管理+合伙企业+（有限合伙）。</div>
+    							<div class="conditionInfoR">基金业协会备案前按协会要求实缴比例不低于250万即可。</div>
     						</div>
-    						<div class="fs-16 col-666 lh-34 mb-14 clearfix">
+    						<div class="fs-18 col-333 lh-36 clearfix">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">股权投资基金企业和股权投资基金管理企业的出资方式限于货币出资。股权投资基金企业注册资本(认缴出资额)最低限额建议为人民币1亿元，其中，股权投资基金企业每个法人股东(合伙人)的认缴注册资本(出资)建议不低于人民币800万元，每个自然人股东(合伙人)的认缴注册资本(出资)建议不低于人民币100万元。有限公司制股权投资基金管理企业的注册资本建议不少于200万元人民币，有限合伙制股权投资基金管理企业的注册资本建议不少于100万元人民币。</div>  
+    							<div class="conditionInfoR">注册时无须法人、高管、股东到场，无须第三方机构，由小镇专业人员代办。</div>  
     						</div>
-    						<div class="fs-16 col-666 lh-34 mb-14 clearfix">
+    						<div class="fs-18 col-70 lh-36 clearfix mt-36">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">股权投资基金企业自登记注册之日起30日内，须向海南省政府金融工作办公室备案，并到备案认可的托管银行开设账户。备案及银行开户均由小镇工作人员代办，公司人员无需到场。</div>
-    						</div>
-    						<div class="fs-16 col-666 lh-34 mb-14 clearfix">
-    							<div class="circle"></div>
-    							<div class="conditionInfoR">股权投资基金企业和股权投资基金管理企业登记注册须按照有限责任公司、有限合伙企业等有关法律、法规规定的要求提交文件材料。</div>
+    							<div class="conditionInfoR">
+    								<span class="fw-7 col-33">小镇提供免费的办公室，享受10年的税收优惠政策</span><br />
+    								<span class="col-eb6100">企业增值税和所得税</span> 前三年地方分享的部分按100%奖励，后七年按60%奖励<br />
+    								<span class="col-eb6100">个人所得税  </span> 十年内地方分享的部分按70%奖励
+    							</div>
     						</div>
 	    				</div>
-	    				<div class="col-requirement fs-24 fw-6 pt-20">对申请登记注册的股权投资基金管理企业管理人员的要求</div>
-	    				<div class="conditionInfo">
-	    					<div class="fs-16 col-666 lh-34 clearfix">
-    							<div class="circle"></div>
-    							<div class="conditionInfoR">所有高级管理人员都应是具有完全民事行为能力的自然人。</div>
-    						</div>
-    						<div class="fs-16 col-666 lh-34 clearfix">
-    							<div class="circle"></div>
-    							<div class="conditionInfoR">所有高级管理人员在最近5年内没有自己应负责任的违法记录或尚未审结的重大民事经济纠纷诉讼案件。</div>
-    						</div>
-    						<div class="fs-16 col-666 lh-34 clearfix">
-    							<div class="circle"></div>
-    							<div class="conditionInfoR">建议至少51%的高级管理人员具备3年以上股权投资基金管理或相关业务经验。</div>
-    						</div>
-    						<div class="fs-16 col-666 lh-34 clearfix">
-    							<div class="circle"></div>
-    							<div class="conditionInfoR">建议至少有证券、金融、财务、法律专业人员各1名。</div>  
-    						</div>
+	    			</div>
+	    			
+	    			<div class="process mt-38">
+	    				<div class="tac fs-30 fw-6 col-33">注册流程</div>
+	    				<div class="tac processCon">
+	    					<img src="../../../static/img/Industry/process.png"/>
 	    				</div>
-						<div class="fs-16 col-requirement fw-6" style="margin: 40px 0 0 30px">注：具体注册条件，注册费用请与小镇工作人员沟通确定</div>
 	    			</div>
 	    			
 	    		</div>
@@ -84,38 +88,35 @@
 </script>
 
 <style scoped>
-	.col-requirement{
-		color: #e8641b;
+	.col-eb6100{
+		color: #eb6100;
 	}
-	.lh-24{
-		line-height: 24px;
-	}
-	.lh-30{
-		line-height: 30px;
+	.lh-28{
+		line-height: 28px;
 	}
 	.lh-34{
 		line-height: 34px;
 	}
-	.mt-6{
-		margin-top: 6px;
+	.lh-36{
+		line-height: 36px;
 	}
-	.mt-12{
-		margin-top: 12px;
+	.mt-24{
+		margin-top: 24px;
 	}
 	.mt-26{
 		margin-top: 26px;
 	}
-	.mt-58{
-		margin-top: 58px;
+	.mt-32{
+		margin-top: 32px;
 	}
-	.mb-14{
-		margin-bottom: 14px;
+	.mt-35{
+		margin-top: 35px;
 	}
-	.mb-23{
-		margin-bottom: 23px;
+	.mt-38{
+		margin-top: 38px;
 	}
-	.pt-20{
-		padding-top: 20px;
+	.mt-40{
+		margin-top: 40px;
 	}
 	.top_banner{
 		width: 100%;
@@ -131,33 +132,36 @@
 		margin:0 12.7%;
 		width:74.6%;
 	}
-	/*流程*/
-	.regCom_ProcessCon .process .processInfo,.regCom_ProcessCon .condition .conditionInfo{
-	    padding-left: 4px;
+	.reg_condition,.com_type,.reg_require,.condition{
+		width: 640px;
+	    margin: auto;
 	}
-	.regCom_ProcessCon .process{
-		margin-top: 41px;
+	/*要求*/
+	.regCom_ProcessCon .reg_requireCon{
+		border-radius: 10px;
+		border: solid 1px #eb6100;
+		padding: 19px 18px;
 	}
-	.regCom_ProcessCon .process .processCon{
-		margin: 28px 0 0 -15px;
-	}
-	/*条件*/
+	/*说明*/
 	.regCom_ProcessCon .condition{
-		margin-top: 70px;
-	}
-	.regCom_ProcessCon .condition .conditionInfo{
-		margin-top: 21px;
+		margin-top: 36px;
 	}
 	.regCom_ProcessCon .condition .circle{
-		width: 10px;
-		height: 10px;
-		border-radius: 5px;
+		width: 12px;
+		height: 12px;
+		border-radius: 2px;
 		background-color: #eb6100;
-		margin: 12px 13px 0 4px;
+		margin: 12px 14px 0 0;
 		float: left;
 	}
 	.regCom_ProcessCon .condition .conditionInfoR{
-		width: 96.8%;
 		float: left;
+	}
+	/*流程*/
+	.regCom_ProcessCon .process .processInfo{
+	    padding-left: 4px;
+	}
+	.regCom_ProcessCon .process .processCon{
+		margin: 28px 0 0 -15px;
 	}
 </style>

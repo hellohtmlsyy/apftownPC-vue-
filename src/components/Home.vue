@@ -2,22 +2,9 @@
 	<div class="home">
 		<i-header :index="index"></i-header>
 		<div class="top_banner">
-			<!--<img src="../../static/img/banner_detail/banner3_detail.jpg" />-->
-			<!--渐变-->
-			<!--<div class="swiper-container">
-	            <div class="swiper-wrapper">
-	                <div class="swiper-slide" style="background-image:url(../../static/img/banner_detail/banner1_detail.jpg);background-size: 100 100;" @click="goDetail1()"></div>
-	                <div class="swiper-slide" style="background-image:url(../../static/img/banner_detail/banner2_detail.jpg)" @click="goDetail2()"></div>       
-	                <div class="swiper-slide" style="background-image:url(../../static/img/banner_detail/banner3_detail.jpg)" @click="goDetail3()"></div>              
-	            </div>
-	            <div class="swiper-pagination swiper-pagination-white"></div>
-	        </div>-->
 	        <!--轮播-->
 	        <div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide cp">
-						<a href="javascript:;"><img src="../../static/img/home/banner_00.jpg"/></a>
-					</div>
 					<div class="swiper-slide cp">
 						<a href="/bannerDet1" target="_blank"><img src="../../static/img/home/banner_01.jpg"/></a>
 					</div>
@@ -49,7 +36,7 @@
 							</div>
 							<div class="dynamicr por cp" @click="goNewsDetail(item.id)">
 								<span class="fs-12 col-ff townDyn tac" :class="item.category == 10? 'bg-town': ( item.category == 20? 'bg-fin': 'bg-tra' ) ">{{ item.category == 10? '小镇动态': ( item.category == 20? '特区金融': '自由贸易港' ) }}</span>
-								<div class="fs-18 lh-24 text-line-3">{{item.title}}</div>
+								<div class="fs-18 lh-24 clamp2">{{item.title}}</div>
 								<div class="fs-12 col-89 poa data">{{item.createdTime}}</div>
 							</div>
 						</div>
@@ -109,13 +96,12 @@
 							<div class="indText">
 								<div class="text mb-34 por">
 									<span class="fs-18 col-33 fw-6 mb-8">十个装备齐全的金融教室</span><br />
-									<span class="fs-16 col-70 mb-5">为海南省金融基金类公司</span><br />
-									<span class="fs-16 col-70">提供快速绿色注册通道</span>
 								</div>
 								<div class="text mb-34 por">
 									<span class="fs-18 col-33 fw-6 mb-8">百间国际化公寓培训住宿 </span><br />
-									<span class="fs-16 col-70 mb-5">联合银行、证券等机构提供</span><br />
-									<span class="fs-16 col-70">工商注册、银行开户、税务登记系列服务</span>
+									<span class="fs-16 col-70 mb-5">欢迎各培训机构及论坛主办单位的入驻</span><br />
+                  <span class="fs-16 col-70 mb-5">小镇拥有会议室、教室、博物馆、酒店、</span><br />
+									<span class="fs-16 col-70">民宿、餐厅等各种设施</span>
 								</div>
 								<div class="text por">
 									<span class="fs-18 col-33 fw-6 mb-8">举办培训论坛更便捷</span><br />
@@ -209,8 +195,8 @@
 		</div>
 		<m-footer></m-footer>
 		<div id="test3" v-show="layImg">
-            <div class="lay_con col-33" style="width: 1234px;">
-				<img src="../../static/img/home/hLayer.png" alt="" style="width:100%"/>    
+            <div class="lay_con col-33 cp" style="width: 1234px;">
+				<img src="../../static/img/home/hLayer.png" alt="" style="width:100%" @click="regCompanyProcess()"/>
 				<div class="cloBtn" @click="close()">×</div>
             </div>
         </div>
@@ -241,7 +227,7 @@
 			setTimeout(function(){
 				self.layImg = false;
 			},12000)
-			
+
 			var mySwiper = new Swiper1('.swiper-container', {
 				autoplay: 5000,
 				loop: true,
@@ -265,15 +251,6 @@
 				.catch(err=>{console.log(err)})
 		},
 		methods: {
-			goDetail1(){
-				this.$router.push({	path: '/bannerDet1'	});
-			},
-			goDetail2(){
-				this.$router.push({	path: '/bannerDet2'	});
-			},
-			goDetail3(){
-				this.$router.push({	path: '/bannerDet3'	});
-			},
 			goNewsDetail(id){
 				location.href= this.$root.urlPath.APF + '/newsDetail?id=' + id;
 			},
@@ -281,7 +258,7 @@
 				location.href = this.$root.urlPath.APF + path;
 			},
 			regCompanyProcess(){
-				window.location.href = this.$root.urlPath.APF + '/regCompanyProcess';
+				location.href = this.$root.urlPath.APF + '/regCompanyProcess';
 			},
 			close(){
 				this.layImg = false;
@@ -292,6 +269,9 @@
 
 <style scoped="scoped">
 	@import url("../../static/css/swiper.min.css");
+	.cp{
+		cursor: pointer;
+	}
 	#test3 {
 		position: fixed;
 		top: 50%;
@@ -336,7 +316,7 @@
 		height: auto;
 	}
 	/*------Swiper end-------*/
-	
+
 	.home .bg-town {
 		background-color: #8957a1;
 	}
@@ -349,7 +329,7 @@
 	.home .lh-24 {
 		line-height: 24px;
 	}
-	
+
 	.home .top_banner,.home .top_banner .swiper-slide {
 		width: 100%;
 		overflow: hidden;
@@ -359,7 +339,7 @@
 		margin: 0 50%;
 		transform: translateX(-50%);
 	}
-	
+
 	.home .tit .line1 {
 		width: 5px;
 		height: 17px;
@@ -370,7 +350,7 @@
 		height: 20px;
 		border-radius: 2px;
 	}
-	
+
 	/*新闻*/
 	.home .news .tit {
 		padding: 25px 0 16px 7px;
@@ -418,11 +398,12 @@
 	}
 	.home .news .con .dynamicr .townDyn {
 		padding: 0 6px;
-		height: 20px;
 		border-radius: 5px;
-		margin-bottom: 4px;
+		margin-bottom: 5px;
+		height: 20px;
+		line-height: 20px;
 	}
-	
+
 	/*common*/
 	.home .industry .con,
 	.home .train .con,
@@ -470,11 +451,11 @@
 		line-height: 60px;
 		display: block;
 	}
-	.home .con .indr .indrBtn:hover {		
+	.home .con .indr .indrBtn:hover {
 		font-weight: 700;
 	}
 	/*产业服务*/
-	
+
 	.home .industry .tit,
 	.home .train .tit,
 	.home .research .tit,
@@ -516,7 +497,7 @@
 		color: #eb6100;
 		cursor: pointer;
 	}
-	
+
 	/*培训*/
 	.home .train .tit .line1 {
 		background-color: #89c997;
@@ -540,7 +521,7 @@
 		color: #22ac38;
 		box-shadow: 3px 3px 27px 0px rgba(0, 86, 31, 0.5);
 	}
-	
+
 	/*研究服务*/
 	.home .research .tit .line1 {
 		background-color: #7ecef4;
@@ -564,7 +545,7 @@
 		color: #00a0e9;
 		box-shadow: 3px 3px 27px 0px rgba(0, 71, 157, 0.5);
 	}
-	
+
 	/*园区到访*/
 	.home .park .tit .line1 {
 		background-color: #959595;
