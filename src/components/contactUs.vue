@@ -16,7 +16,7 @@
 		    					<span class="mr-16">联系电话</span>
 		    					<span class="fw-6 mr-16">400-670-2139</span>
 		    					<span class="mr-16">固定电话</span>
-		    					<span class="fw-6">0898-31002721</span>
+		    					<span class="fw-6">010-65937997</span>
 		    				</div>
 		    				<div class="email">
 		    					<i class="iconfont icon-youxiang"></i>

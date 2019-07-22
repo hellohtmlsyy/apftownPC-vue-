@@ -13,7 +13,7 @@
 						<li>
 							<span>联系电话</span>
 							<p>24小时服务热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24小时固定电话</p>
-							<p class="fw-6">400-670-2139&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0898-31002721</p>
+							<p class="fw-6">400-670-2139&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010-65937997</p>
 						</li>
 						<li>
 							<span>服务平台</span>

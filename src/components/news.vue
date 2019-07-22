@@ -37,24 +37,22 @@
 					<div class="news_channel" v-show="!text">
 						<div class="clearfix mb-30">
 							<div style="width:380px" class="fl mr-30">
-								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=n0786iiqffg" allowFullScreen="true"
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=y0870jwjki0" allowFullScreen="true"
 								 width="100%" height="214px"></iframe>
-								<span class="video-title">引领经济发展新常态:2018海南优质项目投融资对接会三亚举行</span>
-								<span class="fs-14 col-62 mt-8">来源：三亚市广播电视台</span>
+								<span class="video-title">海南广播电视台第一民生对亚太金融小镇的报道</span>
+								<span class="fs-14 col-62 mt-8">来源：海南广播电视台</span>
 							</div>
-
 							<div style="width:380px" class="fl mr-30">
-								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=r0786en5lei" allowFullScreen="true"
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=u0846fnvcpa" allowFullScreen="true"
 								 width="100%" height="214px"></iframe>
-								<span class="video-title">百日大招商：三亚对接项目超两百个11家总部企业落户</span>
+								<span class="video-title">清华大学高级工商管理研修班三亚开课</span>
 								<span class="fs-14 col-62 mt-8">来源：海南网络广播电视台</span>
 							</div>
-
 							<div style="width:380px" class="fl">
-								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=k0804jcdtu2" allowFullScreen="true"
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=r08454v2mge" allowFullScreen="true"
 								 width="100%" height="214px"></iframe>
-								<span class="video-title">亚太金融小镇镇长张焱在2018海上丝绸之路金融高峰论坛讲话</span>
-								<span class="fs-14 col-62 mt-8">来源：三沙卫视</span>
+								<span class="video-title">清华大学高级工商管理研修班齐聚三亚海棠湾亚太金融小镇探讨财富管理</span>
+								<span class="fs-14 col-62 mt-8">来源：三亚市广播电视台</span>
 							</div>
 						</div>
 						<div class="clearfix mb-30">
@@ -65,16 +63,24 @@
 								<span class="fs-14 col-62 mt-8">来源：海南网络广播电视台</span>
 							</div>
 							<div style="width:380px" class="fl mr-30">
-								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=r08454v2mge" allowFullScreen="true"
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=k0804jcdtu2" allowFullScreen="true"
 								 width="100%" height="214px"></iframe>
-								<span class="video-title">清华大学高级工商管理研修班齐聚三亚海棠湾亚太金融小镇探讨财富管理</span>
-								<span class="fs-14 col-62 mt-8">来源：三亚市广播电视台</span>
+								<span class="video-title">亚太金融小镇镇长张焱在2018海上丝绸之路金融高峰论坛讲话</span>
+								<span class="fs-14 col-62 mt-8">来源：三沙卫视</span>
 							</div>
 							<div style="width:380px" class="fl">
-								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=u0846fnvcpa" allowFullScreen="true"
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=r0786en5lei" allowFullScreen="true"
 								 width="100%" height="214px"></iframe>
-								<span class="video-title">清华大学高级工商管理研修班三亚开课</span>
+								<span class="video-title">百日大招商：三亚对接项目超两百个11家总部企业落户</span>
 								<span class="fs-14 col-62 mt-8">来源：海南网络广播电视台</span>
+							</div>
+						</div>
+						<div class="clearfix mb-30">
+							<div style="width:380px" class="fl">
+								<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=n0786iiqffg" allowFullScreen="true"
+								 width="100%" height="214px"></iframe>
+								<span class="video-title">引领经济发展新常态:2018海南优质项目投融资对接会三亚举行</span>
+								<span class="fs-14 col-62 mt-8">来源：三亚市广播电视台</span>
 							</div>
 						</div>
 					</div>

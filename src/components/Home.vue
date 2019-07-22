@@ -5,6 +5,9 @@
 	        <!--轮播-->
 	        <div class="swiper-container">
 				<div class="swiper-wrapper">
+          <div class="swiper-slide cp">
+						<a href="javascript:;"><img src="../../static/img/home/banner_00.jpg"/></a>
+					</div>
 					<div class="swiper-slide cp">
 						<a href="/bannerDet1" target="_blank"><img src="../../static/img/home/banner_01.jpg"/></a>
 					</div>

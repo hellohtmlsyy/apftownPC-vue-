@@ -33,7 +33,7 @@ export default {
             test: {
                 MC: 'http://www.miningcircle.com', //1.0地址
                 APF: 'http://szj.apftown.com:8888', //小镇地址
-                NEW: 'http://memberapi.apftown.com:8088',
+                NEW: 'http://memberapi.apftown.com:8070',
                 MJK: 'http://memberapi.miningcircle.com', //2.0地址
                 UPLOAD: 'http://www.miningcircle.com', //本地上传
             }
