@@ -121,7 +121,7 @@
 
 .foot_info li p {
     font-size: 14px;
-    padding-left: 50px;
+    text-align: center;
     line-height: 25px;
 }
 
