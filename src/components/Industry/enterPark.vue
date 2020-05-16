@@ -7,9 +7,9 @@
 	    <div class="train_tit">
 	        <div class="w">
 	        	<div class="train_tab">
-        			<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/enterPark'}">入驻园区</router-link></div>
-	        		<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/financialSupport'}">金融支持</router-link></div>
-	        		<div class="tabBox dib"><router-link :to="{ path : '/hayCast'}">海丝投</router-link></div>
+        			<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/enterPark'}">优惠政策</router-link></div>
+	        		<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/financialSupport'}">服务体系</router-link></div>
+	        		<div class="tabBox dib"><router-link :to="{ path : '/hayCast'}">自贸政策</router-link></div>
 	        	</div>
 	        </div>
 	    </div>
@@ -39,7 +39,7 @@
 		    			</div>
 		    			<div class="inf people_and">
 		    				<div class="title fs-16 col-ff">人和 - 优惠政策</div>
-		    				<div class="text fs-14 lh-24">为入驻企业提供税收优惠及办公免租<br />税收优惠：2017年1月12日，三亚市政府出台文件，对企业部分的增值税及所得税属三亚市地方按前三年100%后七年60%给予奖励，对个人部分的所得税属三亚市地方按十年70%给予奖励<br />办公免租：对入驻客户提供5年办公室免租优惠，同时企业也可以选择异地办公。</div>
+		    				<div class="text fs-14 lh-24"><span class="fw-6">为入驻企业提供税收优惠及办公免租</span><br /><span class="col-0068b7">税收优惠：</span>2019年12月5日，三亚市政府出台《三亚市高标准，高质量，推进金融业发展扶持奖励暂行办法--基石计划》，对企业部分部分增值税和所得税，企业部分：三亚留存部分三年内给予100%奖励，年度纳税达到50万后，次月奖励。个人部分所得税：三亚留存部分，3年内100%奖励<br /><span class="col-0068b7">办公免租：</span>对入驻客户提供5年办公室免租优惠，同时企业也可以选择异地办公。</div>
 		    			</div>
 		    		</div>
 
@@ -49,24 +49,24 @@
 		    			</div>
 		    			<div class="favBoxr fl">
 		    				<div class="fav fs-36 fw-6">优惠政策</div>
-		    				<span class="fs-16 mb-6">2017年1月12日三亚市人民政府正式通过</span><br />
-							<span class="fs-16 mb-6">《关于支持基金小镇发展优惠政策暂行办法》</span><br />
-							<span class="fs-16">为入驻小镇投资及基金公司提供如下优惠政策</span>
+		    				<span class="fs-16 mb-6">2019年12月5日三亚市人民政府制定</span><br />
+							<span class="fs-16 mb-6">《三亚市高标准高质量推进金融业发展扶持奖励暂行办法--基石计划》</span><br />
+							<span class="fs-16">为三亚金融企业入驻小镇的基金企业提供如下优惠政策</span>
 		    			</div>
 		    		</div>
 
 		    		<div class="favInfo clearfix">
 		    			<div class="inf weather mr-35">
 		    				<div class="title fs-16 col-ff">公司税收</div>
-		    				<div class="text fs-14 lh-24">各类投资基金及管理企业缴交的增值税及企业所得税属三亚市地方分享部分，自认定当年起按前三年 100%，后七年60%给予奖励。</div>
+		    				<div class="text fs-14 lh-24">各类投资基金及管理类企业增值税三亚市地方分享的部分，自认定之日起，三年内三亚留存部分100%奖励，当月税收，次月奖励。</div>
 		    			</div>
 		    			<div class="inf ground_int mr-35">
 		    				<div class="title fs-16 col-ff">个人税收</div>
-		    				<div class="text fs-14 lh-24">对各类投资基金及管理企业中层以上管理人员给予个人所得税优惠，自认定当年起十年内按其缴纳个人工薪收入所得税三亚市地方分享部分的70%给予奖励。</div>
+		    				<div class="text fs-14 lh-24">各类投资基金管理企业，企业高管和合伙人个人所得税，自认定当日起，三年内个人所得税三亚留存部分100%给予奖励。</div>
 		    			</div>
 		    			<div class="inf people_and">
 		    				<div class="title fs-16 col-ff">人才服务</div>
-		    				<div class="text fs-14 lh-24 ls-1-">各类投资基金及管理企业享受三亚市相关人才服务政策包括高端人才落户、医疗、子女教育、人事档案管理、职称评定、社会保障等，市政务中心及各办事大厅实行“一站式”服务。</div>
+		    				<div class="text fs-14 lh-24 ls-1-">各类投资基金及管理企业引进金融稀缺人才，工作满一年，一次性给予10万元奖励，另外对于引进人才购房，购车等，享受专门人才优惠，对于落户，医疗，子女教育，事档案管理、职称评定、社会保障等，市政务中心及各办事大厅实行“一站式”服务。</div>
 		    			</div>
 		    		</div>
 	    		</div>
@@ -113,6 +113,9 @@
 	.lh-24{
 		line-height: 24px;
 	}
+  .col-0068b7{
+    color: #0068b7;
+  }
 	.top_banner{
 		width: 100%;
 	    position: relative;
@@ -168,7 +171,7 @@
 		padding: 39px 22px 45px 22px;
 	}
 	.advInfo .inf{
-		height: 303px;
+		height: 380px;
 	}
 	.advInfo .weather,.favInfo .weather{
 		box-shadow: 2px 4px 1px 0px #f4e1d6;
@@ -204,7 +207,7 @@
 	}
 	/*优惠政策*/
 	.favInfo .inf{
-		height:180px;
+		height:240px;
 	}
 	/*已入驻基金公司*/
 	.enter_parkCon .company{

@@ -10,7 +10,7 @@ Axios.defaults.withCredentials = true; //让ajax携带cookie
 Axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded;text/html;charset=UTF-8'; //配置请求头
 Axios.defaults.headers['APF_UID'] = getCookie("APF_UID")
 
-var ENV = "prod"; // 控制开关,dev 开发环境，release,master环境时改为prod
+var ENV = "test"; // 控制开关,dev 开发环境，release,master环境时改为prod
 
 export default {
     pathUrl: function() {
@@ -32,7 +32,7 @@ export default {
             },
             test: {
                 MC: 'http://www.miningcircle.com', //1.0地址
-                APF: 'http://szj.apftown.com:8888', //小镇地址
+                APF: 'http://localhost:8888', //小镇地址
                 NEW: 'http://memberapi.apftown.com:8070',
                 MJK: 'http://memberapi.miningcircle.com', //2.0地址
                 UPLOAD: 'http://www.miningcircle.com', //本地上传

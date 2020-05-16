@@ -4,13 +4,13 @@
 		<div class="top_banner">
 	        <img src="../../../static/img/Industry/industry_banner2.jpg">
 	    </div>
-	    <div class="train_tit">    	
+	    <div class="train_tit">
 	        <div class="w">
 	        	<div class="train_tab">
-        			<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/enterPark'}">入驻园区</router-link></div>	        			
-	        		<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/financialSupport'}">金融支持</router-link></div>
-	        		<div class="tabBox dib"><router-link :to="{ path : '/hayCast'}">海丝投</router-link></div>
-	        	</div>        	
+        			<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/enterPark'}">优惠政策</router-link></div>
+	        		<div class="tabBox dib tabBox_active tabBox_mr"><router-link class="tab_active" :to="{ path : '/financialSupport'}">服务体系</router-link></div>
+	        		<div class="tabBox dib"><router-link :to="{ path : '/hayCast'}">自贸政策</router-link></div>
+	        	</div>
 	        </div>
 	    </div>
 	    <div class="fin_sup">
@@ -40,7 +40,7 @@
 		    				<img src="../../../static/img/Industry/ser_flowTit.png"/>
 		    			</div>
 		    			<div class="tac mt-35">
-		    				<img src="../../../static/img/Industry/fin_support3.jpg" alt="" />
+		    				<img src="../../../static/img/Industry/fin_support3.png" alt="" />
 		    			</div>
 		    		</div>
 		    		<div class="bank">
@@ -58,7 +58,7 @@
 		    					<span>三亚农商银行</span>
 		    				</div>
 		    			</div>
-		    			
+
 		    			<div class="bankBox clearfix mb-20">
 		    				<div class="bankl fl fs-16 col-ff tac">支持证券</div>
 		    				<div class="bankr fl col-666 fs-16">
@@ -67,14 +67,14 @@
 		    					<span>中信期货</span>
 		    				</div>
 		    			</div>
-		    			
+
 		    			<div class="bankBox clearfix mb-20">
 		    				<div class="bankl fl fs-16 col-ff tac">会计师事务所</div>
 		    				<div class="bankr fl col-666 fs-16">
 		    					<span>德勤会计师事务所</span>
 		    				</div>
 		    			</div>
-		    			
+
 		    			<div class="bankBox clearfix">
 		    				<div class="bankl fl fs-16 col-ff tac">律师事务所</div>
 		    				<div class="bankr fl col-666 fs-16">
@@ -122,7 +122,7 @@
 		margin: 0 50%;
 		transform: translateX(-50%);
 	}
-	
+
 	.fin_supCon{
 		margin:0 12.7%;
 		width:74.6%;

@@ -7,8 +7,8 @@
 	    <div class="train_tit">    	
 	        <div class="w">
 	        	<div class="train_tab">
-        			<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/townLodging'}">小镇住宿</router-link></div>	        			
-	        		<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/offProperty'}">办公物业</router-link></div>
+        			<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/townLodging'}">企业服务</router-link></div>	        			
+	        		<div class="tabBox dib tabBox_mr"><router-link :to="{ path : '/offProperty'}">入驻申请</router-link></div>
 	        		<div class="tabBox dib tabBox_active"><router-link class="tab_active" :to="{ path : '/visitTown'}">参观小镇</router-link></div>
 	        	</div>        	
 	        </div>

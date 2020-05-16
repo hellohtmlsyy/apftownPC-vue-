@@ -1,50 +1,81 @@
 <template>
-	<div>
-		<div class="top_head" id="index">
-			<div class="w clearfix">
-				<div class="fl">
-					<span>24小时热线 400-670-2139</span>
-				</div>
-				<ul class="fr">
-					<li>
-						<router-link :to="{ path: '/home' }">首页</router-link>
-					</li>
-					<li class="top_line"></li>
-					<li v-show="logToggle">
-						<router-link :to="{ path: '/login'}" class="active2">登录</router-link>
-					</li>
-					<li v-show="!logToggle"><a href="javascript:;" class="active2">{{ info.userName && info.userName.length <11 ? info.userName :info.mobile }}</a></li>
-					<li class="top_line"></li>
-					<li v-show="regToggle">
-						<router-link :to="{ path: '/reg' }" class="active2">注册</router-link>
-					</li>
-					<li v-show="!regToggle" @click="signOut()"><a href="javascript:;" class="active2">退出</a></li>
-					<li class="top_line"></li>
-					<li><a href="http://www.apftown.com/aboutus" target="_blank">关于我们</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="top_nav">
-			<div class="w">
-				<div class="logo">
-					<a href="http://www.apftown.com/home">
-						<img src="../../../static/img/b_logo.png" alt="" class="cp" style="width:180px;height:48px;">
-					</a>
-					<ul class="fr clearfix">
-						<li :class="{fw6:index == 1}"><a href="/home">首页</a></li>
-						<li :class="{fw6:index == 2}"><a href="/news">特区新闻</a></li>
-						<li :class="{fw6:index == 3}"><a href="/enterPark">产业服务</a></li>
-						<li :class="{fw6:index == 4}"><a href="/siteReservation">学习服务</a></li>
-						<li :class="{fw6:index == 5}"><a href="/cooperationAgency">研究服务</a></li>
-						<li :class="{fw6:index == 6}"><a href="/townLodging">园区到访</a></li>
-						<li :class="{fw6:index == 7}"><a href="/hayCast">海丝投</a></li>
-						<li :class="{fw6:index == 8}"><a href="/contactUs">联系我们</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+  <div>
+    <div class="top_head" id="index">
+      <div class="w clearfix">
+        <div class="fl">
+          <span>24小时热线 400-670-2139</span>
+        </div>
+        <ul class="fr">
+          <li>
+            <router-link :to="{ path: '/home' }">首页</router-link>
+          </li>
+          <li class="top_line"></li>
+          <li v-show="logToggle">
+            <router-link :to="{ path: '/login'}" class="active2">登录</router-link>
+          </li>
+          <li v-show="!logToggle">
+            <a
+              href="javascript:;"
+              class="active2"
+            >{{ info.userName && info.userName.length <11 ? info.userName :info.mobile }}</a>
+          </li>
+          <li class="top_line"></li>
+          <li v-show="regToggle">
+            <router-link :to="{ path: '/reg' }" class="active2">注册</router-link>
+          </li>
+          <li v-show="!regToggle" @click="signOut()">
+            <a href="javascript:;" class="active2">退出</a>
+          </li>
+          <li class="top_line"></li>
+          <li>
+            <a href="http://www.apftown.com/aboutus" target="_blank">关于我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav">
+      <div class="w">
+        <div class="logo">
+          <a href="http://www.apftown.com/home">
+            <img
+              src="../../../static/img/b_logo.png"
+              alt
+              class="cp"
+              style="width:180px;height:48px;"
+            />
+          </a>
+          <ul class="fr clearfix">
+            <li :class="{fw6:index == 1}">
+              <a href="/home">首页</a>
+            </li>
+            <li style="font-weight:600;color:#e60012;" >
+              <a href="/townLodging">企业入驻</a>
+            </li>
+            <li :class="{fw6:index == 6}">
+              <a href="/enterPark">自贸政策</a>
+            </li>
+            <li :class="{fw6:index == 2}">
+              <a href="/news">新闻动态</a>
+            </li>
+            <li :class="{fw6:index == 3}">
+              <a href="/enterPark">产业服务</a>
+            </li>
+            <li :class="{fw6:index == 4}">
+              <a href="/siteReservation">培训服务</a>
+            </li>
+            <li :class="{fw6:index == 5}">
+              <a href="/cooperationAgency">研究服务</a>
+            </li>
+            <!-- <li :class="{fw6:index == 7}"><a href="/hayCast">海丝投</a></li> -->
+            <li :class="{fw6:index == 8}">
+              <a href="/contactUs">关于我们</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-		<!--<div class="top_nav">
+    <!--<div class="top_nav">
 				<div class="logo ">
 					<nav class="navbar navbar-default apf_nav affix-top" role="navigation">
 					    <div class="container">
@@ -82,161 +113,159 @@
 					    </div>
 					</nav>
 				</div>
-		</div>		-->
-	</div>
+    </div>-->
+  </div>
 </template>
 
 <script>
-	import {
-		delCookie,
-		getCookie
-	} from '@/assets/commonjs/util.js'
-	export default {
-		name: 'i-header',
-		props: ['index'],
-		data() {
-			return {
-				regToggle: true,
-				logToggle: true,
-				info: [],
-			}
-		},
-		created() {
-			this.$axios.get(this.$root.urlPath.NEW + '/user/getUserInfo')
-				.then(res => {
-					//				if(res.data==null||res==null){
-					//					alert('userinfo=null')
-					//				}
-					if (res.data.success) {
-						this.regToggle = false;
-						this.logToggle = false;
-						this.info = res.data.data;
-					}
-				})
-				.catch(err => {
-					console.log(err)
-				});
-		},
-		methods: {
-			signOut() {
-				if (getCookie("APF_UID")) {
-					delCookie("APF_UID");
-					location.reload();
-				}
-			}
-		}
-	}
+import { delCookie, getCookie } from "@/assets/commonjs/util.js";
+export default {
+  name: "i-header",
+  props: ["index"],
+  data() {
+    return {
+      regToggle: true,
+      logToggle: true,
+      info: []
+    };
+  },
+  created() {
+    this.$axios
+      .get(this.$root.urlPath.NEW + "/user/getUserInfo")
+      .then(res => {
+        //				if(res.data==null||res==null){
+        //					alert('userinfo=null')
+        //				}
+        if (res.data.success) {
+          this.regToggle = false;
+          this.logToggle = false;
+          this.info = res.data.data;
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
+  methods: {
+    signOut() {
+      if (getCookie("APF_UID")) {
+        delCookie("APF_UID");
+        location.reload();
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
-	.top_nav {
-		width: 100%;
-		background: #fff;
-	}
+.top_nav {
+  width: 100%;
+  background: #fff;
+}
 
-	.top_nav {
-		height: 80px;
-		line-height: 80px;
-		top: 40px;
-		z-index: 1;
-	}
+.top_nav {
+  height: 80px;
+  line-height: 80px;
+  top: 40px;
+  z-index: 1;
+}
 
-	.top_nav .nav>li>a {
-		padding: 0;
-	}
+.top_nav .nav > li > a {
+  padding: 0;
+}
 
-	.navbar-default .navbar-nav>li>a {
-		color: currentcolor;
-	}
+.navbar-default .navbar-nav > li > a {
+  color: currentcolor;
+}
 
-	.container-fluid>.navbar-collapse,
-	.container-fluid>.navbar-header,
-	.container>.navbar-collapse,
-	.container>.navbar-header {
-		margin: 0;
-	}
+.container-fluid > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container > .navbar-header {
+  margin: 0;
+}
 
-	.navbar-nav {
-		margin: 7.5px 0;
-	}
+.navbar-nav {
+  margin: 7.5px 0;
+}
 
-	.navbar-collapse {
-		padding: 0;
-	}
+.navbar-collapse {
+  padding: 0;
+}
 
-	@media (min-width: 768px) {
-		.top_nav .navbar-collapse {
-			width: 80%;
-		}
-	}
+@media (min-width: 768px) {
+  .top_nav .navbar-collapse {
+    width: 80%;
+  }
+}
 
-	.top_nav .nav {
-		padding-left: 5px;
-	}
+.top_nav .nav {
+  padding-left: 5px;
+}
 
-	.top_head {
-		height: 40px;
-		line-height: 40px;
-		top: 0;
-		background: rgb(246, 246, 246);
-		z-index: 10;
-	}
+.top_head {
+  height: 40px;
+  line-height: 40px;
+  top: 0;
+  background: rgb(246, 246, 246);
+  z-index: 10;
+}
 
-	.top_line {
-		width: 1px;
-		height: 10px;
-		background: #fff;
-		margin: 15px 9px 0px;
-		background: #333;
-	}
+.top_line {
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  margin: 15px 9px 0px;
+  background: #333;
+}
 
-	.top_nav {
-		z-index: 1;
-		background: #fff;
-	}
+.top_nav {
+  z-index: 1;
+  background: #fff;
+}
 
-	.top_nav .logo .logoImg {
-		line-height: 100px;
-	}
+.top_nav .logo .logoImg {
+  line-height: 100px;
+}
 
-	.top_nav .logo .logoImg img {
-		width: 221px;
-	}
+.top_nav .logo .logoImg img {
+  width: 221px;
+}
 
-	@media only screen and (min-width:375px) and (max-width: 620px) {
-		.top_nav .logo .logoImg img {
-			width: 100%;
-		}
-	}
+@media only screen and (min-width: 375px) and (max-width: 620px) {
+  .top_nav .logo .logoImg img {
+    width: 100%;
+  }
+}
 
-	.top_nav li {
-		float: left;
-		font-size: 18px;
-		padding-right: 40px;
-	}
+.top_nav li {
+  float: left;
+  font-size: 18px;
+  padding-right: 40px;
+}
 
-	@media only screen and (min-width: 375px) and (max-width: 768px) {
-		.top_nav li {
-			font-size: 16px;
-			padding-right: 10px;
-		}
-	}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .top_nav li {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}
 
-	.top_nav li:last-child {
-		padding-right: 0;
-	}
+.top_nav li:last-child {
+  padding-right: 0;
+}
 
-	.top_nav .row {
-		display: flex;
-		align-items: center;
-	}
+.top_nav .row {
+  display: flex;
+  align-items: center;
+}
 
-	.top_nav .row ul {
-		text-align: right;
-	}
+.top_nav .row ul {
+  text-align: right;
+}
 
-	.fw6 {
-		font-weight: 600;
-		color: #eb6100;
-	}
+.fw6 {
+  font-weight: 600;
+  color: #eb6100;
+}
 </style>

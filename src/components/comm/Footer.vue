@@ -12,8 +12,8 @@
 					<ul class="foot_info">
 						<li>
 							<span>联系电话</span>
-							<p>24小时服务热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24小时固定电话</p>
-							<p class="fw-6">400-670-2139&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010-65937997</p>
+							<p>24小时服务热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<p class="fw-6">400-670-2139&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						</li>
 						<li>
 							<span>服务平台</span>
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 			<div class="foot_b">
-				<div class="p">©2014 亚太金融（基金）小镇 All rights reserved |<a href="http://www.miibeian.gov.cn/" target="_blank">琼ICP备17000007号-1</a><br />投资有风险，理财需谨慎
+				<div class="p">©2014 亚太金融（基金）小镇 All rights reserved |<a href="http://www.beian.miit.gov.cn" target="_blank">琼ICP备17000007号-1</a><br />投资有风险，理财需谨慎
 				</div>
 			</div>
 		</div>

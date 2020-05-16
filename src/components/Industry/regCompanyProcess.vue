@@ -14,7 +14,7 @@
 	    					<img src="../../../static/img/Industry/com_type2.png" alt="" />
 	    				</div>
 	    			</div>
-	    			
+
 	    			<div class="reg_condition">
 	    				<div class="tac fs-30 fw-6 col-33 mt-40">注册条件</div>
 	    				<div class="mt-17 fs-20 col-33 lh-34">
@@ -24,7 +24,7 @@
 	    					<img src="../../../static/img/Industry/reg_condition.png" alt="" />
 	    				</div>
 	    			</div>
-	    			
+
 	    			<div class="reg_require tac">
 	    				<div class="fs-30 fw-6 col-33 mt-40">注册要求</div>
 	    				<div class="reg_requireCon mt-26">
@@ -50,26 +50,70 @@
     						</div>
     						<div class="fs-18 col-333 lh-36 clearfix">
     							<div class="circle"></div>
-    							<div class="conditionInfoR">注册时无须法人、高管、股东到场，无须第三方机构，由小镇专业人员代办。</div>  
+    							<div class="conditionInfoR">注册时无须法人、高管、股东到场，无须第三方机构，由小镇专业人员代办。</div>
     						</div>
+                <div class="fs-18 col-333 lh-36 clearfix">
+                	<div class="circle"></div>
+                  <div class="">
+                  	<span class="fw-7 col-33">小镇提供免费办公空间，享受海南自贸港税收奖励优惠政策</span><br />
+                  	<span class="col-eb6100">企业所得税  </span> 对已经成功备案并发行产品的基金公司，企业年纳税总额达到50万，三亚市留存的部分三年内给予100%的税收奖励。<br />
+                  	<span class="col-eb6100">个人所得税  </span> 三年内地方分享部分100%返还。
+                  </div>
+                </div>
     						<div class="fs-18 col-70 lh-36 clearfix mt-36">
     							<div class="circle"></div>
     							<div class="conditionInfoR">
-    								<span class="fw-7 col-33">小镇提供免费的办公室，享受10年的税收优惠政策</span><br />
-    								<span class="col-eb6100">企业增值税和所得税</span> 前三年地方分享的部分按100%奖励，后七年按60%奖励<br />
-    								<span class="col-eb6100">个人所得税  </span> 十年内地方分享的部分按70%奖励
+    								<span class="fw-7 col-33">注册名称（小镇可以注册三个名称的公司）</span><br />
+    								基金管理有限公司&nbsp;&nbsp;投资管理有限公司&nbsp;&nbsp;资产管理有限公司<br />
     							</div>
     						</div>
+                <div class="fs-18 col-70 lh-36 clearfix">
+                  <div class="circle"></div>
+                  <div class="conditionInfoR">
+                    <span class="fw-7 col-33">注册类型</span>&nbsp;&nbsp;有限责任公司&nbsp;&nbsp;有限合伙公司<br />
+                  </div>
+                </div>
+                <div class="fs-18 col-70 lh-36 clearfix">
+                  <div class="circle"></div>
+                  <div class="conditionInfoR">
+                    <span class="fw-7 col-33">命名规则</span>&nbsp;&nbsp;海南或三亚<br />
+                  </div>
+                </div>
+                <div class="fs-18 col-70 lh-36 clearfix">
+                  <div class="circle"></div>
+                  <div class="conditionInfoR">
+                    <span class="fw-7 col-33">营业范围</span>&nbsp;&nbsp;有限责任公司&nbsp;&nbsp;有限合伙公司<br />
+                  </div>
+                </div>
+                <div class="fs-18 col-70 lh-36 clearfix">
+                  <div class="circle"></div>
+                  <div class="conditionInfoR">
+                    <span class="fw-7 col-33">从业资格</span><br />
+                    1.法人及相关的高管人员具备基金从业资格<br />
+                    2.有金融从业经验，无协会重大违纪违法等行为，征信良好<br />
+                    3.股东具备出资能力<br />
+                    4.不要做p2p，小额贷款等协会禁止的行业
+                  </div>
+                </div>
+                <div class="fs-18 col-70 lh-36 clearfix">
+                  <div class="circle"></div>
+                  <div class="conditionInfoR">
+                    <span class="fw-7 col-33">注册资本要求</span><br />
+                    注册资本不低于300万建议1000万左右，注册时不用实缴<br />
+                    （如注册资本是300万，就要全部实缴到位）<br />
+                    协会备案前实缴不低于注册资本的25%
+                  </div>
+                </div>
 	    				</div>
 	    			</div>
-	    			
+
 	    			<div class="process mt-38">
 	    				<div class="tac fs-30 fw-6 col-33">注册流程</div>
 	    				<div class="tac processCon">
 	    					<img src="../../../static/img/Industry/process.png"/>
 	    				</div>
 	    			</div>
-	    			
+
 	    		</div>
 	    	</div>
 	    </div>
